@@ -1,0 +1,151 @@
+@import 'base/normalize';
+@import 'base/typography';
+
+
+html {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Vollkorn', serif;*/
+
+
+/* Our-team styles start */
+.our-team {
+  padding: 80px 0 90px;
+
+  &__title {
+    font-size: 23px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 28px;
+    margin-bottom: 43px;
+    position: relative;
+  }
+
+  &__title::after {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.09);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+
+.container {}
+
+.our-time {
+  &__inner {}
+
+  &__items {
+    display: flex;
+    gap: 20px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__img {
+        width: 220px;
+        height: 220px;
+        object-position: top center;
+        object-fit: cover;
+        filter: grayscale(1);
+      }
+
+      &__title {
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 20px 0 6px;
+      }
+
+      &__subtitle {
+        font-family: 'Vollkorn', serif;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+        padding-bottom: 18px;
+      }
+
+      &__socials {
+        padding: 10px 0 11px;
+
+        .social {
+          &__link {
+            padding: 0 3px;
+          }
+
+          &__icon {}
+        }
+      }
+    }
+  }
+}
+
+/* Our-team styles end */
+
+
+
+/* *** styles start */
+/* *** styles end */
+
+
+/*@import 'abstracts/variables' // definitely needed!;
+@import 'abstracts/functions' // not needed;
+@import 'abstracts/mixins' // not needed;
+@import 'abstracts/placeholders' // not needed;
+
+@import 'vendors/bootstrap' // not needed;
+@import 'vendors/jquery-ui' // not needed;
+
+@import 'base/reset' // perhaps needed;
+@import 'base/normalize' //definitely needed!;
+@import 'base/typography' // definitely needed!;
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'pages/home' // not needed;
+@import 'pages/contact' // not needed;
+
+@import 'themes/theme' // perhaps needed;
+@import 'themes/admin' // perhaps needed;*/
