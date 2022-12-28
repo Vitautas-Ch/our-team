@@ -57,10 +57,6 @@ font-family: 'Vollkorn', serif;*/
     transform: translateX(-50%);
     bottom: 0;
   }
-}
-
-.our-time {
-  &__inner {}
 
   &__items {
     display: flex;
@@ -102,8 +98,6 @@ font-family: 'Vollkorn', serif;*/
           &__link {
             padding: 0 3px;
           }
-
-          &__icon {}
         }
       }
     }
@@ -176,6 +170,113 @@ font-family: 'Vollkorn', serif;*/
 }
 
 /* Сustomer-reviews styles end */
+
+/* Get-in-touch styles start */
+.get-in-touch {
+  padding: 80px 0 70px;
+  background-color: #7EC4BD;
+  background-image: url(/src/images/backgrounds/get-in-touch_bg\(origin\).png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  &__title {
+    font-size: 23px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 28px;
+    margin-bottom: 43px;
+    position: relative;
+
+  }
+
+  &__title::after {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.09);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+
+    .item {
+      padding-top: 13px;
+
+      &__icon-container {
+        min-height: 65px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+
+      &__title {
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 25px 0 20px;
+      }
+
+      &__subtitle {
+        max-width: 180px;
+        font-family: 'Vollkorn';
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
+        color: #212121;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      &__socials {
+
+        .social {
+
+          &__link {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 12px;
+          }
+
+          &__icon {
+            padding-right: 9px;
+          }
+
+          &__subtitle {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .item:nth-child(2) {
+    padding-right: 32px;
+  }
+
+  &__to-contacts {
+    font-family: 'Vollkorn';
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #212121;
+
+    .to-contacts {
+      margin: 0;
+    }
+  }
+}
+
+/* Get-in-touch styles end */
 
 /* *** styles start */
 /* *** styles end */
