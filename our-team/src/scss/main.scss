@@ -59,8 +59,6 @@ font-family: 'Vollkorn', serif;*/
   }
 }
 
-.container {}
-
 .our-time {
   &__inner {}
 
@@ -114,7 +112,70 @@ font-family: 'Vollkorn', serif;*/
 
 /* Our-team styles end */
 
+/* Сustomer-reviews styles start */
+.customer-reviews {
+  background-color: #F5F5F5;
+  padding: 70px 0 70px;
 
+  &__inner {
+    text-align: center;
+  }
+
+  &__img {
+    padding-bottom: 60px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 54px 0;
+      position: relative;
+
+      &__subtitle {
+        font-family: 'Vollkorn';
+        font-size: 26px;
+        line-height: 33px;
+        max-width: 340px;
+        margin: 0;
+        margin-bottom: auto;
+        padding-bottom: 24px;
+      }
+
+      &__img {
+        width: 64px;
+        height: 64px;
+        object-position: top center;
+        object-fit: cover;
+      }
+
+      &__title {
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #ABABAB;
+        margin: 0;
+        padding: 10px 0 29px;
+      }
+    }
+
+    .item:first-child::before {
+      content: '';
+      width: 2px;
+      height: calc(100% - 29px);
+      background: rgba(0, 0, 0, 0.04);
+      position: absolute;
+      left: 100%;
+      top: 0;
+    }
+  }
+}
+
+/* Сustomer-reviews styles end */
 
 /* *** styles start */
 /* *** styles end */

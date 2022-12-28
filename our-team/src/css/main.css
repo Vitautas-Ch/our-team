@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -461,6 +462,64 @@ font-family: 'Vollkorn', serif;*/
   padding: 0 3px;
 }
 /* Our-team styles end */
+/* Сustomer-reviews styles start */
+.customer-reviews {
+  background-color: #F5F5F5;
+  padding: 70px 0 70px;
+}
+.customer-reviews__inner {
+  text-align: center;
+}
+.customer-reviews__img {
+  padding-bottom: 60px;
+}
+.customer-reviews__items {
+  display: flex;
+  justify-content: center;
+}
+.customer-reviews__items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 54px 0;
+  position: relative;
+}
+.customer-reviews__items .item__subtitle {
+  font-family: "Vollkorn";
+  font-size: 26px;
+  line-height: 33px;
+  max-width: 340px;
+  margin: 0;
+  margin-bottom: auto;
+  padding-bottom: 24px;
+}
+.customer-reviews__items .item__img {
+  width: 64px;
+  height: 64px;
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.customer-reviews__items .item__title {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ABABAB;
+  margin: 0;
+  padding: 10px 0 29px;
+}
+.customer-reviews__items .item:first-child::before {
+  content: "";
+  width: 2px;
+  height: calc(100% - 29px);
+  background: rgba(0, 0, 0, 0.04);
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+/* Сustomer-reviews styles end */
 /* *** styles start */
 /* *** styles end */
 /*@import 'abstracts/variables' // definitely needed!;
