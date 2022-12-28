@@ -524,7 +524,7 @@ font-family: 'Vollkorn', serif;*/
 .get-in-touch {
   padding: 80px 0 70px;
   background-color: #7EC4BD;
-  background-image: url(/src/images/backgrounds/get-in-touch_bg\(origin\).png);
+  background-image: url(../images/backgrounds/get-in-touch_bg\(origin\).png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
