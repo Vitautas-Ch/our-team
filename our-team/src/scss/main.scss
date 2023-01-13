@@ -204,10 +204,14 @@ font-family: 'Vollkorn', serif;*/
 
   &__items {
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
 
     .item {
       padding-top: 13px;
+      width: 33.3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       &__icon-container {
         min-height: 65px;
@@ -243,7 +247,6 @@ font-family: 'Vollkorn', serif;*/
 
           &__link {
             display: flex;
-            justify-content: center;
             padding-bottom: 12px;
           }
 
@@ -257,10 +260,6 @@ font-family: 'Vollkorn', serif;*/
         }
       }
     }
-  }
-
-  .item:nth-child(2) {
-    padding-right: 32px;
   }
 
   &__to-contacts {
